@@ -27,7 +27,7 @@ export class AuthenticateStudentService implements IAuthenticateStudentService {
     if (!passwordMatch) {
       throw new InvalidArgument("Email/Password incorrect");
     }
-
+    console.log("teste");
     const token = sign(
       {
         login: student.document,

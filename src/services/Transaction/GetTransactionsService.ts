@@ -18,6 +18,7 @@ export class GetTransactionsService implements IGetTransactionService {
     this.getTransactionsRepository = getTransactionsRepository;
     this.findAccountByIdRepository = findAccountByIdRepository;
   }
+
   async execute(
     accountId: string,
     filters: ITransactionPaginationRequest
